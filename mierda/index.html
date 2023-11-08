@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="peliculas">
+    <div class="pelicula" onclick="mostrarPopup(1)">
+        <h3>Película 1</h3>
+        <img src="pelicula.png" alt="Película 1">
+    </div>
+    
+    <div class="pelicula" onclick="mostrarPopup(2)">
+        <h3>Película 2</h3>
+        <img src="pelicula.png" alt="Película 2">
+    </div>
+
+    <div class="pelicula" onclick="mostrarPopup(3)">
+        <h3>Película 3</h3>
+        <img src="pelicula.png" alt="Película 3">
+    </div>
+
+    <!-- Copiar y pegar el div para añadir más peliculas si hace falta, también cambiar la información -->
+
+</div>
+
+<div id="popup" class="popup">
+    <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+    <h2 id="tituloPopup">Título de la Película</h2>
+    <img id="imagenPopup" src="" alt="Imagen de la Película">
+    <p id="sinopsisPopup" class="sinopsis">Sinopsis de la Película</p>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

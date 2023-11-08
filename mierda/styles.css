@@ -1,0 +1,37 @@
+/* Estilos pochetes de la página */
+.peliculas {
+    display: flex;
+}
+
+.pelicula {
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* Estilos del popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #000;
+    z-index: 9999;
+}
+
+.popup img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.cerrar {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
